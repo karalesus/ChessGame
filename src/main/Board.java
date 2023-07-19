@@ -53,6 +53,16 @@ public class Board {
         setPiece(new Coordinates(File.E, 8), new King(Color.BLACK, new Coordinates(File.E, 8)));
 
     }
+
+    public void removePiece(Coordinates coordinates){
+        pieces.remove(coordinates);
+    }
+
+    public void movePiece(Coordinates from, Coordinates to) {
+        Piece piece = getPiece(from);
+        removePiece(from);
+        setPiece(to, piece);
+    }
     public static boolean isSquareDark(Coordinates coordinates) {
             return (((coordinates.file.ordinal() +1) + coordinates.rank) % 2) == 0;
         }
