@@ -28,6 +28,11 @@ public class Coordinates {
     }
 
     @Override
+    public String toString() {
+        return file + String.valueOf(rank);
+    }
+
+    @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
@@ -40,3 +45,4 @@ public class Coordinates {
         return Objects.hash(file, rank);
     }
 }
+
