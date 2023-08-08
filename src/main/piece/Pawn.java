@@ -50,4 +50,18 @@ public class Pawn extends Piece {
         }
         return result;
     }
+
+    @Override
+    protected Set<CoordinatesShift> getPieceAttacks() {
+        Set<CoordinatesShift> result = new HashSet<>();
+
+        if (color == Color.WHITE){
+            result.add(new CoordinatesShift(-1, 1));
+            result.add(new CoordinatesShift(1, 1));
+        }else{
+            result.add(new CoordinatesShift(-1, -1));
+            result.add(new CoordinatesShift(1, -1));
+        }
+        return result;
+    }
 }

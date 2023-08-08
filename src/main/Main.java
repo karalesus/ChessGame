@@ -10,7 +10,7 @@ public class Main {
 //        Board board = newBboard();
 //        board.setupDefaultPiecesPosition();
 
-        Board board = new BoardFactory().fromFEN("rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1");
+        Board board = new BoardFactory().fromFEN("8/8/5p2/8/5K2/8/5k2/8 w - - 0 1");
                 //"3k4/8/p5n1/5Q2/R7/3P4/P7/3K4 w - - 0 1");
                 //3k4/6n1/8/2N5/3B4/8/8/3K4 w - - 0 1");
                 //"rnbqkbnr/pppppppp/8/8/3N4/5B2/PPPPPPPP/R1BQK1NR w KQkq - 0 1");
